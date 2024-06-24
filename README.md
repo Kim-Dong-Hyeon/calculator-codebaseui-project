@@ -1,10 +1,10 @@
 # iOS 입문 과제
 
-### **간단한 계산기 앱 만들기**
+### **간단한 계산기 앱 만들기(CodeBaseUI)**
 
 ---
 
-<img src="https://teamsparta.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F83c75a39-3aba-4ba4-a792-7aefe4b07895%2Fd62096c4-d686-4342-82dc-cd1ae543920c%2FUntitled.png?table=block&id=118f9635-dcac-4f0a-abe4-95b2f7c68e70&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=1420&userId=&cache=v2" alt="Alternate text">
+<img src="https://teamsparta.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F83c75a39-3aba-4ba4-a792-7aefe4b07895%2Fd62096c4-d686-4342-82dc-cd1ae543920c%2FUntitled.png?table=block&id=118f9635-dcac-4f0a-abe4-95b2f7c68e70&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=1420&userId=&cache=v2" alt="앱 구현 단계별 설명 그림">
 
 ```text
 🧑🏻‍💻 간단한 계산기 앱 만들기
@@ -34,7 +34,7 @@
 
 ---
 
-<img src="https://i.ibb.co/D9d9w9P/image.gif">
+<img src="https://i.ibb.co/D9d9w9P/image.gif" alt="앱 실행 Gif">
 <br></br>
 
 ### **구현 단계 Level 1~8**
@@ -71,7 +71,7 @@
 
 ---
 
-<img align='left' width='200' height='420' src='https://teamsparta.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F83c75a39-3aba-4ba4-a792-7aefe4b07895%2Fc9be3c30-86cd-4a25-b7a8-a2b42fdb997c%2FUntitled.png?table=block&id=1f6ed06b-baa3-4225-a70a-9848190d2a66&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=380&userId=&cache=v2'>
+<img align='left' width='200' height='420' src='https://teamsparta.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F83c75a39-3aba-4ba4-a792-7aefe4b07895%2Fc9be3c30-86cd-4a25-b7a8-a2b42fdb997c%2FUntitled.png?table=block&id=1f6ed06b-baa3-4225-a70a-9848190d2a66&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=380&userId=&cache=v2' alt="1단계 구현 사진">
 
 ```text
 
@@ -98,7 +98,7 @@
 
 ---
 
-<img align='left' width='200' height='420' src='https://teamsparta.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F83c75a39-3aba-4ba4-a792-7aefe4b07895%2F600db970-41fa-4dc2-94ac-5765676d13b0%2FUntitled.png?table=block&id=6f8d2254-63f0-4d96-bda3-b281b671a3f4&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=890&userId=&cache=v2'>
+<img align='left' width='200' height='420' src='https://teamsparta.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F83c75a39-3aba-4ba4-a792-7aefe4b07895%2F600db970-41fa-4dc2-94ac-5765676d13b0%2FUntitled.png?table=block&id=6f8d2254-63f0-4d96-bda3-b281b671a3f4&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=890&userId=&cache=v2' alt="2단계 구현 사진">
 
 ```text
 
@@ -130,7 +130,7 @@
 
 ---
 
-<img align='left' width='200' height='420' src='https://teamsparta.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F83c75a39-3aba-4ba4-a792-7aefe4b07895%2F7a741e1d-bf97-4f31-9240-bbe29db3df2e%2FUntitled.png?table=block&id=4c27b577-20a0-48dc-832c-bcf7383f5887&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=890&userId=&cache=v2'>
+<img align='left' width='200' height='420' src='https://teamsparta.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F83c75a39-3aba-4ba4-a792-7aefe4b07895%2F7a741e1d-bf97-4f31-9240-bbe29db3df2e%2FUntitled.png?table=block&id=4c27b577-20a0-48dc-832c-bcf7383f5887&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=890&userId=&cache=v2' alt="3단계 구현 사진">
 
 ```text
 
@@ -156,7 +156,7 @@
 
 ---
 
-<img align='left' width='200' height='420' src='https://teamsparta.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F83c75a39-3aba-4ba4-a792-7aefe4b07895%2Fa37c65f9-f4a7-4c2b-92b0-1bb02604185b%2FUntitled.png?table=block&id=9c33ae1f-cb69-472a-933d-03260c693fb6&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=890&userId=&cache=v2'>
+<img align='left' width='200' height='420' src='https://teamsparta.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F83c75a39-3aba-4ba4-a792-7aefe4b07895%2Fa37c65f9-f4a7-4c2b-92b0-1bb02604185b%2FUntitled.png?table=block&id=9c33ae1f-cb69-472a-933d-03260c693fb6&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=890&userId=&cache=v2' alt="4단계 구현 사진">
 
 ```text
 
@@ -174,7 +174,7 @@
 
 ---
 
-<img align='left' width='200' height='420' src='https://teamsparta.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F83c75a39-3aba-4ba4-a792-7aefe4b07895%2F0f4a4a83-718d-4d2e-83e6-e802086d7a7b%2FUntitled.png?table=block&id=0b071fa6-12a2-4386-8316-f15b163ed599&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=880&userId=&cache=v2'>
+<img align='left' width='200' height='420' src='https://teamsparta.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F83c75a39-3aba-4ba4-a792-7aefe4b07895%2F0f4a4a83-718d-4d2e-83e6-e802086d7a7b%2FUntitled.png?table=block&id=0b071fa6-12a2-4386-8316-f15b163ed599&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=880&userId=&cache=v2' alt="5단계 구현 사진">
 
 ```text
 
@@ -232,7 +232,7 @@
 
 ---
 
-<img src="https://teamsparta.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F83c75a39-3aba-4ba4-a792-7aefe4b07895%2Fa5e02aa4-00b2-4fe8-b383-41607945cd0a%2FUntitled.png?table=block&id=6796a064-abfe-4762-a585-2de9e2e88482&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=1420&userId=&cache=v2">
+<img src="https://teamsparta.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F83c75a39-3aba-4ba4-a792-7aefe4b07895%2Fa5e02aa4-00b2-4fe8-b383-41607945cd0a%2FUntitled.png?table=block&id=6796a064-abfe-4762-a585-2de9e2e88482&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=1420&userId=&cache=v2" alt="8단계 구현 사진">
 
 ```text
 🧑🏻‍💻 등호 (`=`) 버튼을 클릭하면 연산이 수행되도록 구현합니다.

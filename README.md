@@ -33,7 +33,7 @@
 
 ---
 
-[계산기앱.mov](https://i.ibb.co/D9d9w9P/image.gif)
+[계산기앱.mov]<img src="https://i.ibb.co/D9d9w9P/image.gif">
 
 ### 구현 단계 Level 1~8
 

@@ -33,7 +33,7 @@
 
 ---
 
-[계산기앱.mov](https://teamsparta.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F83c75a39-3aba-4ba4-a792-7aefe4b07895%2Fd62096c4-d686-4342-82dc-cd1ae543920c%2FUntitled.png?table=block&id=118f9635-dcac-4f0a-abe4-95b2f7c68e70&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=1420&userId=&cache=v2)
+[계산기앱.mov](https://i.ibb.co/D9d9w9P/image.gif)
 
 ### 구현 단계 Level 1~8
 

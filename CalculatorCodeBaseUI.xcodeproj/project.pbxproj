@@ -13,6 +13,8 @@
 		76DF0A6D2C29512100875ED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76DF0A6C2C29512100875ED2 /* Assets.xcassets */; };
 		76DF0A782C29542B00875ED2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 76DF0A772C29542B00875ED2 /* .gitignore */; };
 		76DF0A7A2C29543B00875ED2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 76DF0A792C29543B00875ED2 /* README.md */; };
+		76DF0A802C2A8E7B00875ED2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76DF0A7F2C2A8E7B00875ED2 /* LaunchScreen.storyboard */; };
+		76DF0A832C2AB02000875ED2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 76DF0A822C2AB02000875ED2 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		76DF0A712C29512100875ED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76DF0A772C29542B00875ED2 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		76DF0A792C29543B00875ED2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		76DF0A7F2C2A8E7B00875ED2 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76DF0A832C2AB02000875ED2 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +66,7 @@
 				76DF0A652C29512100875ED2 /* SceneDelegate.swift */,
 				76DF0A672C29512100875ED2 /* ViewController.swift */,
 				76DF0A6C2C29512100875ED2 /* Assets.xcassets */,
+				76DF0A7F2C2A8E7B00875ED2 /* LaunchScreen.storyboard */,
 				76DF0A712C29512100875ED2 /* Info.plist */,
 			);
 			path = CalculatorCodeBaseUI;
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = CalculatorCodeBaseUI;
+			packageProductDependencies = (
+				76DF0A822C2AB02000875ED2 /* SnapKit */,
+			);
 			productName = CalculatorCodeBaseUI;
 			productReference = 76DF0A602C29512100875ED2 /* CalculatorCodeBaseUI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 76DF0A572C29512100875ED2;
+			packageReferences = (
+				76DF0A812C2AB02000875ED2 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 76DF0A612C29512100875ED2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76DF0A782C29542B00875ED2 /* .gitignore in Resources */,
+				76DF0A802C2A8E7B00875ED2 /* LaunchScreen.storyboard in Resources */,
 				76DF0A6D2C29512100875ED2 /* Assets.xcassets in Resources */,
 				76DF0A7A2C29543B00875ED2 /* README.md in Resources */,
 			);
@@ -342,6 +354,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		76DF0A812C2AB02000875ED2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		76DF0A822C2AB02000875ED2 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 76DF0A812C2AB02000875ED2 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 76DF0A582C29512100875ED2 /* Project object */;
 }

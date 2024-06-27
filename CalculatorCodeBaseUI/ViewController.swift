@@ -13,9 +13,11 @@ class ViewController: UIViewController {
     
     /// numberLabel : 숫자와 결과를 표시하는 UILabel
     /// verticalStackView : 여러 개의 horizontalStackView를 담는 verticalStackView
+    /// currentInput : 현재 입력된 문자열을 저장하는 변수
     /// numbers : 버튼에 들어갈 문자들의 배열
     var numberLabel = UILabel()
     var verticalStackView = UIStackView()
+    var currentInput = "0"
     
     let numbers = [
         ["7", "8", "9", "+"],
@@ -34,7 +36,7 @@ class ViewController: UIViewController {
     
     /// makeNumberLabel : numberLabel을 설정하고 제약 조건을 추가하는 함수
     private func makeNumberLabel() {
-        numberLabel.text = "12345"
+        numberLabel.text = "0"
         numberLabel.textColor = .white
         numberLabel.textAlignment = .right
         numberLabel.font = .boldSystemFont(ofSize: 60)
@@ -101,7 +103,9 @@ class ViewController: UIViewController {
         button.frame.size.height = 80
         button.frame.size.width = 80
         button.layer.cornerRadius = 40
+        button.addTarget(self, action: #selector(buttonTapped(_:)), for: .touchUpInside)
         
+        // 숫자 버튼과 연산 버튼의 배경색을 구분하여 설정
         if Int(title) != nil {
             button.backgroundColor = UIColor(red: 58/255, green: 58/255, blue: 58/255, alpha: 1.0)
         } else {
@@ -109,6 +113,25 @@ class ViewController: UIViewController {
         }
         
         return button
+    }
+    
+    /// buttonTapped : 버튼이 눌렸을 때 호출되는 함수
+    /// - Parameter sender: 눌린 UIButton
+    @objc private func buttonTapped(_ sender: UIButton) {
+        guard let title = sender.currentTitle else { return }
+        
+        if currentInput == "0" {
+            currentInput = title
+        } else {
+            currentInput += title
+        }
+        
+        // 맨 앞자리가 "0"인 경우 "0"을 지우기
+        if currentInput.hasPrefix("0") && currentInput.count > 1 {
+            currentInput.removeFirst()
+        }
+        
+        numberLabel.text = currentInput
     }
 
 }

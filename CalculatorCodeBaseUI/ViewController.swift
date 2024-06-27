@@ -12,13 +12,16 @@ import SnapKit
 class ViewController: UIViewController {
     
     /// numberLabel : 숫자와 결과를 표시하는 UILabel
-    /// verticalStackView : 여러 개의 horizontalStackView를 담는 verticalStackView
-    /// currentInput : 현재 입력된 문자열을 저장하는 변수
-    /// numbers : 버튼에 들어갈 문자들의 배열
     var numberLabel = UILabel()
+    /// verticalStackView : 여러 개의 horizontalStackView를 담는 verticalStackView
     var verticalStackView = UIStackView()
+    /// currentInput : 현재 입력된 문자열을 저장하는 변수
     var currentInput = "0"
     
+    /// calculate : 계산을 담당하는 Calculate 인스턴스
+    let calculate = Calculate()
+    
+    /// numbers : 버튼에 들어갈 문자들의 배열
     let numbers = [
         ["7", "8", "9", "+"],
         ["4", "5", "6", "−"],
@@ -122,6 +125,13 @@ class ViewController: UIViewController {
         
         if title == "AC" {
             currentInput = "0"
+        } else if title == "=" {
+            let formattedExpression = calculate.formatExpression(currentInput)
+            if let result = calculate.calculate(expression: formattedExpression) {
+                currentInput = String(result)
+            } else {
+                currentInput = "Error"
+            }
         } else {
             if currentInput == "0" {
                 currentInput = title

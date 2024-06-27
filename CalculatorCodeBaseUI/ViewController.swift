@@ -112,3 +112,8 @@ class ViewController: UIViewController {
     }
 
 }
+
+#Preview {
+    let name = ViewController()
+    return name
+}

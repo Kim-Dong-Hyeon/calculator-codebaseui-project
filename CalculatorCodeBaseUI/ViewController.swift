@@ -120,10 +120,14 @@ class ViewController: UIViewController {
     @objc private func buttonTapped(_ sender: UIButton) {
         guard let title = sender.currentTitle else { return }
         
-        if currentInput == "0" {
-            currentInput = title
+        if title == "AC" {
+            currentInput = "0"
         } else {
-            currentInput += title
+            if currentInput == "0" {
+                currentInput = title
+            } else {
+                currentInput += title
+            }
         }
         
         // 맨 앞자리가 "0"인 경우 "0"을 지우기

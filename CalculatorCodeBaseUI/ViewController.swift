@@ -8,17 +8,32 @@
 import UIKit
 import SnapKit
 
+/// ViewController : CalculatorCodeBaseUI 앱의 메인 화면을 구성하는 역할
 class ViewController: UIViewController {
     
+    /// numberLabel : 숫자와 결과를 표시하는 UILabel
+    /// verticalStackView : 여러 개의 horizontalStackView를 담는 verticalStackView
+    /// numbers : 버튼에 들어갈 문자들의 배열
     var numberLabel = UILabel()
-
+    var verticalStackView = UIStackView()
+    
+    let numbers = [
+        ["7", "8", "9", "+"],
+        ["4", "5", "6", "-"],
+        ["1", "2", "3", "×"],
+        ["0", "AC", "=", "÷"]
+    ]
+    
+    /// viewDidLoad : 뷰가 로드될 때 호출되는 함수. 초기 UI 설정을 수행
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .black
-        createNumberLabel()
+        makeNumberLabel()
+        makeVerticalStackView()
     }
     
-    private func createNumberLabel() {
+    /// makeNumberLabel : numberLabel을 설정하고 제약 조건을 추가하는 함수
+    private func makeNumberLabel() {
         numberLabel.text = "12345"
         numberLabel.textColor = .white
         numberLabel.textAlignment = .right
@@ -33,6 +48,61 @@ class ViewController: UIViewController {
             $0.height.equalTo(100)
         }
     }
+    
+    /// makeVerticalStackView : verticalStackView를 설정하고 HorizontalStackView를 추가하는 함수
+    private func makeVerticalStackView() {
+        verticalStackView.axis = .vertical
+        verticalStackView.backgroundColor = .black
+        verticalStackView.spacing = 10
+        verticalStackView.distribution = .fillEqually
+        
+        for buttonTitles in numbers {
+            let buttons = buttonTitles.map { makeButton($0) }
+            let horizontalStackView = makeHorizontalStackView(buttons)
+            verticalStackView.addArrangedSubview(horizontalStackView)
+        }
+        
+        view.addSubview(verticalStackView)
+        
+        verticalStackView.snp.makeConstraints {
+            $0.width.equalTo(350)
+            $0.top.equalTo(numberLabel.snp.bottom).offset(60)
+            $0.centerX.equalToSuperview()
+        }
+    }
+    
+    /// makeHorizontalStackView : 주어진 뷰 배열을 가로로 정렬하는 UIStackView를 생성하는 함수
+    /// - Parameter views: 가로로 배치할 UIView 배열
+    /// - Returns: 생성된 가로 UIStackView
+    private func makeHorizontalStackView(_ views: [UIView]) -> UIStackView {
+        let horizontalStackView = UIStackView(arrangedSubviews: views)
+        
+        horizontalStackView.axis = .horizontal
+        horizontalStackView.backgroundColor = .black
+        horizontalStackView.spacing = 10
+        horizontalStackView.distribution = .fillEqually
+        
+        horizontalStackView.snp.makeConstraints {
+            $0.height.equalTo(80)
+        }
+        
+        return horizontalStackView
+    }
+    
+    /// makeButton : 주어진 title로 UIButton을 생성하는 함수
+    /// - Parameter title: 버튼에 들어갈 문자열
+    /// - Returns: 성성된 UIButton
+    private func makeButton(_ title: String) -> UIButton {
+        let button = UIButton()
+        
+        button.setTitle(title, for: .normal)
+        button.titleLabel?.font = .boldSystemFont(ofSize: 30)
+        button.backgroundColor = UIColor(red: 58/255, green: 58/255, blue: 58/255, alpha: 1.0)
+        button.frame.size.height = 80
+        button.frame.size.width = 80
+        button.layer.cornerRadius = 40
+        
+        return button
+    }
 
 }
-

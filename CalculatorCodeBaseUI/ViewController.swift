@@ -19,9 +19,9 @@ class ViewController: UIViewController {
     
     let numbers = [
         ["7", "8", "9", "+"],
-        ["4", "5", "6", "-"],
+        ["4", "5", "6", "−"],
         ["1", "2", "3", "×"],
-        ["0", "AC", "=", "÷"]
+        ["AC", "0", "=", "÷"]
     ]
     
     /// viewDidLoad : 뷰가 로드될 때 호출되는 함수. 초기 UI 설정을 수행
@@ -101,6 +101,12 @@ class ViewController: UIViewController {
         button.frame.size.height = 80
         button.frame.size.width = 80
         button.layer.cornerRadius = 40
+        
+        if Int(title) != nil {
+            button.backgroundColor = UIColor(red: 58/255, green: 58/255, blue: 58/255, alpha: 1.0)
+        } else {
+            button.backgroundColor = .orange
+        }
         
         return button
     }
